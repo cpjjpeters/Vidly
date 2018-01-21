@@ -1,5 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using System.Web.UI.WebControls;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -12,7 +15,18 @@ namespace Vidly.Controllers
             {
                 Name = "Shrek!"
             };
-            return View(movie);
+            var custormers = new List<Customer>
+            {
+                new Customer {Name = "Customer 1"},
+                new Customer {Name = "Customer 2"}
+            };
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = custormers
+            };
+
+            return View(viewModel);  //return View(movie);
             //return new ViewResult();
             //return Content("Hello World!");
             //return HttpNotFound();
