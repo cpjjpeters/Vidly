@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using System.Web.UI.WebControls;
 using Vidly.Models;
 using Vidly.ViewModels;
 
@@ -42,11 +41,28 @@ namespace Vidly.Controllers
         public ActionResult Index(int? pageIndex, string sortBy)
         {
             if (!pageIndex.HasValue)
-                pageIndex=1;
+                pageIndex = 1;
             if (string.IsNullOrWhiteSpace(sortBy))
                 sortBy = "Name";
             return Content(string.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
 
         }
+        public ActionResult ByReleaseDate(int year, int month)
+        {
+            return Content(month + "/" + year);
+        }
+        public ActionResult Rondam()
+        {
+            var movie = new Movie() { Name = "Batman Returns." };
+            ViewData["Movie"] = movie;
+            return View();
+        }
+        //public ActionResult Rindim()
+        //{
+        //    var movie = new Movie() {Name = "Chocolat"};
+        //    var viewResult = new ViewResult();
+        //    viewResult.ViewData.Model
+        //    return View();
+        //}
     }
 }
