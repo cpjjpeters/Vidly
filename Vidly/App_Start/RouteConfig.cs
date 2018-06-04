@@ -15,11 +15,11 @@ namespace Vidly
 
             routes.MapMvcAttributeRoutes();
 
-            //routes.MapRoute(
-            //    "MoviesByReleaseDate",
-            //    "movies/released/{year}/{month}",
-            //    new {controller = "Movies", action = "ByReleaseDate"},    
-            //    new { year = @"\d{4}", month = @"01|2|03|04|05|06|7|8|9|10|11|12" });
+            routes.MapRoute(
+                "MoviesByReleaseDate",
+                "movies/released/{year}/{month}",
+                new { controller = "Movies", action = "ByReleaseDate" },
+                new { year = @"\d{4}", month = @"01|2|03|04|05|06|7|8|9|10|11|12" }); // februari is 1 digit:2
 
             routes.MapRoute(
                 name: "Default",
