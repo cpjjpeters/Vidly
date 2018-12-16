@@ -6,13 +6,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            @Html.ActionLink("Application naam", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("VIDLY", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("About", "About", "Home")</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("THUIS", "Index", "Home")</li>
+                <li>@Html.ActionLink("View Movies", "Index","Movies")</li >
+                <li>@Html.ActionLink("Bekijk Films", "Projectie", "Film")</li>
+                
             </ul>
             @Html.Partial("_LoginPartial")
             </div>
