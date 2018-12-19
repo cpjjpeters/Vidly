@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Vidly.Models;
 
-namespace Vidly.Models
+namespace Vidly.ViewModels
 {
-    public class Customer
+    public class CustomerViewModel
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
+        public Customer  customer{ get; set; }
         public List<Customer> Customers { get; set; }
     }
 }
