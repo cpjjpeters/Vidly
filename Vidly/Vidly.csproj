@@ -202,6 +202,7 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\FilmController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KlantController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -216,6 +217,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Film.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Klant.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -288,6 +290,9 @@
     <Content Include="Views\Customer\Customer.cshtml" />
     <Content Include="Views\Customer\Random.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Klant\Index.cshtml" />
+    <Content Include="Views\Customer\Lijst.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

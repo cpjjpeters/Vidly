@@ -21,7 +21,7 @@ namespace Vidly.Controllers
             };
             var viewModel = new CustomerViewModel
             {
-                customer = cust,
+                //customer = cust,
                 Customers = customers
             };
 
@@ -36,6 +36,21 @@ namespace Vidly.Controllers
         {
             var cust = new Customer() { Name = "Cust3" };
             return View(cust);
+        }
+        public ActionResult Lijst()
+        {
+            var customers2 = new List<Customer>
+            {
+                new Customer {ID=21, Name = "Customer 21"},
+                new Customer {ID=22,Name = "Customer 22"}
+            };
+            var viewModel2 = new CustomerViewModel { Customers=customers2};
+            return View(viewModel2);
+        }
+        public ActionResult Details(int id)
+        {
+            var detail = new Customer() { ID = id };
+            return View(detail);
         }
     }
 }
