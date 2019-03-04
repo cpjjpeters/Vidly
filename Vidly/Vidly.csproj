@@ -212,6 +212,10 @@
     <Compile Include="Migrations\201903031948116_InitialOne.Designer.cs">
       <DependentUpon>201903031948116_InitialOne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903041902302_PopulateMemberschipTypes.cs" />
+    <Compile Include="Migrations\201903041902302_PopulateMemberschipTypes.Designer.cs">
+      <DependentUpon>201903041902302_PopulateMemberschipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -309,6 +313,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903031948116_InitialOne.resx">
       <DependentUpon>201903031948116_InitialOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903041902302_PopulateMemberschipTypes.resx">
+      <DependentUpon>201903041902302_PopulateMemberschipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
